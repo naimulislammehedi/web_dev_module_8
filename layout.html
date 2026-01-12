@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container > * {
+            border: 3px solid gold;
+            background-color: aqua;
+            padding: 30px;
+        }
+
+        .container {
+            display: grid;
+            gap: 20px;
+            grid-template-areas: 
+            "header header header header"
+            "navbar main main sidebar"
+            "navbar main main advertise"
+            "footer footer footer footer"
+            ;
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        #sidebar {
+            grid-area: sidebar;
+        }
+
+        #advertise {
+            grid-area: advertise;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <header>
+        <h3>The Header</h3>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">nav menu</a></li>
+            <li><a href="">nav menu</a></li>
+            <li><a href="">nav menu</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Main Article Area</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quod necessitatibus itaque praesentium ullam nulla dolore. Aliquid architecto similique officiis deleniti aliquam? Dolor laboriosam doloribus deserunt hic totam blanditiis, soluta vel libero distinctio sit possimus provident nam consequuntur reiciendis reprehenderit optio, enim unde in, eius suscipit veniam. Recusandae, odio aliquid.</p>
+    </main>
+
+    <aside id="sidebar">
+        <p>Sidebar</p>
+    </aside>
+    <aside id="advertise">
+        <p>Advertise</p>
+    </aside>
+    <footer>
+        <p>The Footer</p>
+    </footer>
+</body>
+
+</html>
