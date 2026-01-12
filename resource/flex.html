@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Flex</title>
-
     <style>
         .container {
             display: flex;
@@ -16,7 +15,7 @@
             background-color: teal;
             padding: 20px;
             border-radius: 10px;
-            color: white;
+            color: white
         }
 
         .items {
@@ -27,41 +26,43 @@
 
         .box-container {
             display: flex;
-            gap: 30px;
             flex-wrap: wrap;
+            gap: 30px;
         }
 
-        @media screen and (max-width: 576px) {
-          .container {
-            flex-direction: column;
-        }
+        @media screen and (max-width:576px) {
+            .container {
+                flex-direction: column;
+            }
 
             .items {
                 width: 100%;
+
             }
         }
     </style>
 </head>
 
 <body>
-    <h2>Responsive Flex</h2>
+    <h2>Lets Explore Flex </h2>
 
     <div class="container">
+        <!-- .box>h3{box-$}+p{lorem}  -->
         <div class="box">
             <h3>box-1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dignissimos quibusdam ducimus reiciendis eos
-                officia aspernatur adipisci ipsa veniam iure facere, incidunt dolorem facilis, nobis amet voluptatem,
-                veritatis nemo corrupti aliquid distinctio! Nesciunt libero, impedit fugiat repellendus nisi officia
-                voluptatem molestias excepturi nemo odio voluptate ad numquam exercitationem odit nostrum veritatis
-                fugit esse omnis ab delectus unde officiis minus eligendi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci commodi reprehenderit laborum
+                blanditiis ad officia modi aperiam hic veritatis, ex numquam, dolorum iusto? Quis cupiditate reiciendis
+                magni odit accusantium necessitatibus praesentium nihil odio dolorum ullam dolorem consectetur, dolor,
+                laborum ducimus esse nemo dignissimos officia doloremque rerum aliquam voluptatem. Quisquam neque non,
+                ullam fuga ea sed explicabo similique nulla labore voluptatem?</p>
         </div>
         <div class="box">
             <h3>box-2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dignissimos quibusdam ducimus reiciendis eos
-                officia aspernatur adipisci ipsa veniam iure facere, incidunt dolorem facilis, nobis amet voluptatem,
-                veritatis nemo corrupti aliquid distinctio! Nesciunt libero, impedit fugiat repellendus nisi officia
-                voluptatem molestias excepturi nemo odio voluptate ad numquam exercitationem odit nostrum veritatis
-                fugit esse omnis ab delectus unde officiis minus eligendi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci commodi reprehenderit laborum
+                blanditiis ad officia modi aperiam hic veritatis, ex numquam, dolorum iusto? Quis cupiditate reiciendis
+                magni odit accusantium necessitatibus praesentium nihil odio dolorum ullam dolorem consectetur, dolor,
+                laborum ducimus esse nemo dignissimos officia doloremque rerum aliquam voluptatem. Quisquam neque non,
+                ullam fuga ea sed explicabo similique nulla labore voluptatem?</p>
         </div>
     </div>
 
@@ -87,6 +88,9 @@
         <div class="items">box19</div>
         <div class="items">box20</div>
     </div>
+
+
+
 </body>
 
 </html>
