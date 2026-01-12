@@ -31,6 +31,12 @@
     cursor: pointer;
 }
 
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .section-heading {
     max-width: 827px;
     text-align: center;
@@ -65,10 +71,8 @@
 
 header {
     background-color: #FFF8F3;
-    background: url("../images/developer.png"), url("../images/header_bg.png"), #FFF8F3;
-    background-position: 23px 38px, bottom right;
+    background: url("../images/header_bg.png"), #FFF8F3;
     background-repeat: no-repeat;
-    padding-top: 50px;
 }
 
 nav {
@@ -306,6 +310,17 @@ footer .footer-container {
         justify-content: center;
     }
 
+    #banner {
+        margin: 20px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    #banner .banner-image img {
+        gap: 20px;
+        width: 100%;
+    }
+
     #about,
     #skills,
     #resume {
@@ -320,7 +335,7 @@ footer .footer-container {
         gap: 40px;
     }
 
-    #skills .skills-container .skill-box, #about .about-container .about-info, footer .footer-container, #resume .resume-container, nav {
+    #skills .skills-container .skill-box, #about .about-container .about-info, footer .footer-container, #resume .resume-container, nav, #banner, .btn-group {
         flex-direction: column;
     }
 
