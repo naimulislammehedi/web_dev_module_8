@@ -7,7 +7,7 @@
     <title>Document</title>
 
     <style>
-        .container > * {
+        .container>* {
             border: 3px solid gold;
             background-color: aqua;
             padding: 30px;
@@ -16,11 +16,11 @@
         .container {
             display: grid;
             gap: 20px;
-            grid-template-areas: 
-            "header header header header"
-            "navbar main main sidebar"
-            "navbar main main advertise"
-            "footer footer footer footer"
+            grid-template-areas:
+                "header header header header"
+                "navbar main main sidebar"
+                "navbar main main advertise"
+                "footer footer footer footer"
             ;
         }
 
@@ -47,6 +47,30 @@
         footer {
             grid-area: footer;
         }
+
+        @media screen and (max-width: 576px) {
+            .container {
+                grid-template-areas:
+                    "header"
+                    "navbar"
+                    "main"
+                    "sidebar"
+                    "advertise"
+                    "footer"
+                ;
+            }
+        }
+
+        @media screen and (min-width: 576px) and (max-width: 992px) {
+            .container {
+            grid-template-areas: 
+            "header header header"
+            "navbar navbar navbar"
+            "sidebar main main"
+            "advertise footer footer"
+            ;
+        }
+    }
     </style>
 </head>
 
@@ -63,7 +87,10 @@
     </nav>
     <main>
         <h2>Main Article Area</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quod necessitatibus itaque praesentium ullam nulla dolore. Aliquid architecto similique officiis deleniti aliquam? Dolor laboriosam doloribus deserunt hic totam blanditiis, soluta vel libero distinctio sit possimus provident nam consequuntur reiciendis reprehenderit optio, enim unde in, eius suscipit veniam. Recusandae, odio aliquid.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quod necessitatibus itaque praesentium
+            ullam nulla dolore. Aliquid architecto similique officiis deleniti aliquam? Dolor laboriosam doloribus
+            deserunt hic totam blanditiis, soluta vel libero distinctio sit possimus provident nam consequuntur
+            reiciendis reprehenderit optio, enim unde in, eius suscipit veniam. Recusandae, odio aliquid.</p>
     </main>
 
     <aside id="sidebar">
